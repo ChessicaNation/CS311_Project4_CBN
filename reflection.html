@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reflection</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1 style="margin-top: 25px">CS311 Project 4 Reflection</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="img/reflection.jpg" class="img-fluid" alt="Reflection">
+        </div>
+        <div class="col">
+        <p>The biggest challenge I encountered working with Bootstrap was just getting started.
+        After I downloaded the compiled CSS files, I wasn't sure where to go next. I reviewed the
+        website, but there was so much information there, it was pretty overwhelming. I Googled
+        "Bootstrap for beginners" and found a tutorial from freeCodeCamp, which was very informative
+        and gave me some direction to get started on my website project.</p>
+        <p>Once I got started on the basic layout of my home page, I noticed that the header for the
+        website title was very close to the top edge of the page. I looked at the bootstrap.css file
+        and saw that the default was to have 0 margin on the top for H1 headings, which I was using.
+        I thought the solution would be easy: to increase the top margin. I tried multiple times to
+        increase the top margin, but nothing would work. I experimented on the bottom margin and it
+        worked just fine. I was going to let it go, but I decided to try putting inline CSS in the
+        HTML document, which is typically not ideal. However, this method worked and the title was no
+        longer sitting at the very edge of the screen.</p>
+        <p>I was ready to move onto the individual composer pages - or so I thought. I looked closer
+        at the model sketch and realized it would not be so simple to have the Works column go all the
+        way to the bottom of the page while the Composer Name column only spanned across part of the
+        page. I went back the the Grid page on the Bootstrap website to see if they had any information
+        on how to get a grid to look similar to what I needed - et voilà! I found the section on nested
+        rows and realized that would work perfectly for my composer page layouts.</p>
+        <p>After I loaded all of the content into the composer pages, I was resizing the browser window
+        to see how the columns would respond. Everything looked great except one thing: a couple of the
+        works had individual words that were too long to fit in the column and ran over into the bio
+        section when the browser window was very small. I did some Googling and found the text break
+        function which breaks the word when it reaches the edge of the column and continues the rest of
+        the word on the following line.</p>
+        <p>Overall, I enjoyed working with Bootstrap once I became somewhat familiar with it. There
+        are still so many features that I didn't get into, and I would really like to take the time to
+        play around with it some more. Many of the examples on the Bootstrap website are much more complex
+        than the project required, but I can see how they would be very helpful and time-saving for
+        building complicated websites.</p>
+      </div>
+    </div>
+    </div>
+
+    <div class="container">
+      <footer class="d-flex text-nowrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">Designed by: Chessica Nation &copy; 2022</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
